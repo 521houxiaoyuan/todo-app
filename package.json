@@ -1,8 +1,11 @@
 {
   "name": "todo-app",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "cd backend && node src/index.js"
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install --omit=dev",
+    "start": "node backend/src/index.js"
   }
 }
