@@ -5,6 +5,11 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "cd backend && npm install --omit=dev"
+    "build": "cd backend && npm install --omit=dev",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.94.0"
   }
 }
